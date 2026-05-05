@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      .simpletable > table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      tr:nth-child(even) {
+        background-color: aquamarine;
+      }
+
+      .designedRow > th,
+      .designedRow > td {
+        border: 1px solid black;
+        border-radius: 10px;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="history.back()">go back</button>
+    <h2>Collapsed Borders</h2>
+
+    <div class="simpletable">
+      <table style="width: 100%">
+        <tr>
+          <th style="width: 50%">Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>80</td>
+        </tr>
+      </table>
+    </div>
+
+    <hr />
+    <section>
+      <p>
+        Use the CSS border-radius property to add rounded corners to the
+        borders.
+      </p>
+
+      <table style="width: 100%" class="designedTable">
+        <tr class="designedRow">
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr class="designedRow">
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr class="designedRow">
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+        <tr class="designedRow">
+          <td>John</td>
+          <td>Doe</td>
+          <td>80</td>
+        </tr>
+      </table>
+    </section>
+  </body>
+</html>

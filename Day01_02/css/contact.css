@@ -1,0 +1,10 @@
+form {
+  width: 100vw;
+  height: 300px;
+}
+input {
+  width: 70vw;
+}
+label {
+  width: 20vw;
+}

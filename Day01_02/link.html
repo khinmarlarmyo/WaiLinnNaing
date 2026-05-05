@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>METATEAM|MYANMAR</title>
+    <link rel="shortcut icon" href="img/mlogo.png" type="image/x-icon" />
+    <style>
+      #linkStyle:link,
+      #linkStyle:visited {
+        background-color: #f44336;
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      #linkStyle:hover,
+      #linkStyle:active {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="history.back()">Go Back</button>
+
+    <h1>Studying Links</h1>
+
+    <hr />
+    <h5>a tag link</h5>
+    <a href="https://www.google.com">Visit Google </a>
+    <hr />
+    <h5>a tag link with using target attributes</h5>
+    <a href="https://www.google.com">Visit Google </a>
+    <span>(using target _self(default))</span>
+    <br />
+    <a href="https://www.google.com" target="_blank">Visit Google </a>
+    <span>(using target _blank)</span>
+    <br />
+    <a href="https://www.google.com" target="_parent">Visit Google </a>
+    <span>(using target _parent)</span>
+    <br />
+    <a href="https://www.google.com" target="_top">Visit Google </a>
+    <span>(using target _top)</span>
+
+    <hr />
+    <h5>Absolute URL vs Relative URL</h5>
+    <h6>Absolute URLs</h6>
+    <p><a href="https://www.youtube.com/">Youtube</a></p>
+    <p><a href="https://www.google.com/">Google</a></p>
+
+    <h6>Relative URLs</h6>
+    <p><a href="index.html">Go Back TO HOME PAGE</a></p>
+    <h6>
+      Using Image With Link only using relative url and using title attribute
+      (click the image below )
+    </h6>
+    <a href="index.html" title="Go Back To HOME">
+      <img src="/img/img1.jpg" width="200px" height="150px" alt="Image I" />
+    </a>
+    <hr />
+    <h5>Button As a Link using with title attribute</h5>
+    <button
+      onclick="document.location = 'index.html'"
+      title="Go Back To Our Main Page"
+    >
+      Go Back To Our Home Page
+    </button>
+    <hr />
+    <h5>using link colors & designs</h5>
+    <h2>Link Button</h2>
+    <p>A link styled as a button:</p>
+    <a href="default.asp" id="linkStyle" target="_blank">This is a link</a>
+  </body>
+</html>

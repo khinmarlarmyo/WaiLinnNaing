@@ -1,0 +1,42 @@
+label {
+  width: 200px;
+  display: inline-block;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea {
+  width: 200px; /* Make inputs fill their container */
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px;
+}
+
+select {
+  width: 220px;
+  padding: 10px;
+}
+.registerForm {
+  width: 500px;
+  height: auto;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+}
+
+button[type="reset"] {
+  padding: 10px;
+  margin: 5px;
+  background-color: yellow;
+}
+button[type="submit"] {
+  padding: 10px;
+  margin: 5px;
+  background-color: lightblue;
+}
+
+h3 {
+  text-align: center;
+}
