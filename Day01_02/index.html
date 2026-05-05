@@ -6,53 +6,191 @@
     <title>METATEAM|Lunch Order System</title>
     <link rel="shortcut icon" href="img/mlogo.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <style></style>
   </head>
   <body>
-    <nav>
+    <nav
+      style="
+        position: fixed;
+        top: 10px;
+        left: 0;
+        right: 0;
+        padding: 0 15px;
+        z-index: 1000;
+      "
+    >
       <ul
         style="
           display: flex;
+          align-items: center;
           justify-content: space-between;
           list-style-type: none;
           background-color: aquamarine;
-          border-radius: 10px;
-          position: fixed;
-          top: 5px;
+          border-radius: 12px;
+          margin: 0 auto;
+          padding: 10px 20px;
+          max-width: 1200px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         "
       >
-        <li style="width: 20%; text-align: start">
-          <a href="#"
-            >METATEAM
-            <sub>Myanmar</sub>
+        <li style="flex: 1">
+          <a
+            href="#"
+            style="
+              text-decoration: none;
+              font-weight: bold;
+              color: #333;
+              font-size: 1.2rem;
+            "
+          >
+            METATEAM <sub style="font-size: 0.6rem; color: #555">Myanmar</sub>
           </a>
         </li>
-        <li><a href="#home">HTML Basic</a></li>
-        <li><a href="page-title.html">Page Title</a></li>
-        <li><a href="heading.html">Heading</a></li>
-        <li><a href="paragraph.html#paragraph">Paragraph</a></li>
-        <li><a href="link.html">Links</a></li>
-        <li><a href="image.html">Images</a></li>
-        <li><a href="paragraph.html#formatting">Formatting</a></li>
-        <li><a href="table.html">Table</a></li>
-        <li><a href="list.html">List</a></li>
-        <li><a href="div.html">Div, Class, ID</a></li>
-        <li><a href="block.html">Block & Inline-Block</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="register.html">Register</a></li>
+
+        <li style="display: flex; gap: 20px">
+          <a href="contact.html" style="text-decoration: none; color: #333"
+            >Contact</a
+          >
+          <a href="register.html" style="text-decoration: none; color: #333"
+            >Register</a
+          >
+        </li>
       </ul>
     </nav>
+
     <main style="margin-top: 100px">
       <h1>Studying Tags</h1>
-      <section id="htmlbasic"></section>
-      <section id="paragraph"></section>
-      <section id="link"></section>
-      <section id="image"></section>
-      <hr />
-      <section id="formatting"></section>
-      <hr />
-      <section id="table"></section>
-      <hr />
-      <section id="list"></section>
+
+      <table>
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Remark</th>
+        </tr>
+        <tr>
+          <td><a href="page-title.html">Page Title</a></td>
+          <td>
+            Defines the title of the document shown in the browser's title bar
+            or tab.
+          </td>
+          <td>Must be placed inside the &lt;head&gt; section.</td>
+        </tr>
+        <tr>
+          <td><a href="heading.html">Heading</a></td>
+          <td>
+            Defines HTML headings from &lt;h1&gt; (most important) to &lt;h6&gt;
+            (least important).
+          </td>
+          <td>Used for SEO and structural hierarchy.</td>
+        </tr>
+        <tr>
+          <td><a href="paragraph.html#paragraph">Paragraph</a></td>
+          <td>Defines a block of text separated by vertical margins.</td>
+          <td>
+            Browsers automatically add space before and after &lt;p&gt; tags.
+          </td>
+        </tr>
+        <tr>
+          <td><a href="link.html">Links</a></td>
+          <td>
+            Creates hyperlinks to other web pages, files, or locations within a
+            page.
+          </td>
+          <td>Uses the &lt;a&gt; tag with the "href" attribute.</td>
+        </tr>
+        <tr>
+          <td><a href="image.html">Images</a></td>
+          <td>Used to embed visual media in an HTML page.</td>
+          <td>Requires "src" and "alt" (accessibility) attributes.</td>
+        </tr>
+        <tr>
+          <td><a href="paragraph.html#formatting">Formatting</a></td>
+          <td>
+            Text styling tags like bold, italic, subscript, and highlighted
+            text.
+          </td>
+          <td>Includes &lt;strong&gt;, &lt;em&gt;, &lt;mark&gt;, etc.</td>
+        </tr>
+        <tr>
+          <td><a href="table.html">Table</a></td>
+          <td>
+            Organizes data into rows and columns using &lt;tr&gt;, &lt;th&gt;,
+            and &lt;td&gt;.
+          </td>
+          <td>Should be used for tabular data, not page layout.</td>
+        </tr>
+        <tr>
+          <td><a href="list.html">List</a></td>
+          <td>
+            Groups related items in ordered (numbered) or unordered (bulleted)
+            formats.
+          </td>
+          <td>
+            Uses &lt;ul&gt; or &lt;ol&gt; as containers for &lt;li&gt; items.
+          </td>
+        </tr>
+        <tr>
+          <td><a href="div.html">Div, Class, ID</a></td>
+          <td>
+            Containers used to group elements for styling and layout purposes.
+          </td>
+          <td>Class is for multiple items; ID is for a unique element.</td>
+        </tr>
+        <tr>
+          <td><a href="block.html">Block & Inline-Block</a></td>
+          <td>
+            Defines how elements take up space and sit relative to other
+            elements.
+          </td>
+          <td>Block starts on a new line; Inline stays in the flow.</td>
+        </tr>
+        <tr>
+          <td><a href="structure.html">Meta & Head</a></td>
+          <td>Contains metadata about the document.</td>
+          <td>Includes &lt;meta&gt;, &lt;link&gt;, and &lt;script&gt;.</td>
+        </tr>
+        <tr>
+          <td><a href="semantic.html">Semantic Layout</a></td>
+          <td>Defines structural parts of a page.</td>
+          <td>
+            Includes &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;footer&gt;,
+            and &lt;section&gt;.
+          </td>
+        </tr>
+        <tr>
+          <td><a href="form.html">Forms</a></td>
+          <td>Used to collect user input.</td>
+          <td>
+            Wraps controls like &lt;input&gt;, &lt;textarea&gt;, and
+            &lt;button&gt;.
+          </td>
+        </tr>
+        <tr>
+          <td><a href="input.html">Input Controls</a></td>
+          <td>Creates various interactive fields.</td>
+          <td>
+            Attributes like type="text", "checkbox", or "radio" change its
+            function.
+          </td>
+        </tr>
+        <tr>
+          <td><a href="multimedia.html">Multimedia</a></td>
+          <td>Embeds audio or video content.</td>
+          <td>
+            Uses &lt;audio&gt; and &lt;video&gt; with &lt;source&gt; tags for
+            compatibility.
+          </td>
+        </tr>
+        <tr>
+          <td><a href="quote.html">Quotes & Citations</a></td>
+          <td>Defines quoted text from other sources.</td>
+          <td>
+            Uses &lt;blockquote&gt; for long quotes and &lt;q&gt; for short
+            ones.
+          </td>
+        </tr>
+      </table>
     </main>
   </body>
 </html>

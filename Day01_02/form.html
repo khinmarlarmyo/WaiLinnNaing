@@ -8,21 +8,48 @@
   </head>
   <body>
     <button onclick="history.back()">Go Back</button>
-    <h1>The form autocomplete attribute</h1>
 
-    <p>
-      Fill in and submit the form, then reload the page, start to fill in the
-      form again - and see how autocomplete works.
-    </p>
+    <hr />
 
-    <p>Then, try to set autocomplete to "off".</p>
+    <form action="#" method="post">
+      <!-- Text input -->
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" /><br /><br />
 
-    <form action="/action_page.php" autocomplete="on">
-      <label for="fname">First name:</label>
-      <input type="text" id="fname" name="fname" /><br /><br />
-      <label for="email">Email:</label>
-      <input type="text" id="email" name="email" /><br /><br />
-      <input type="submit" />
+      <!-- Email input -->
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" /><br /><br />
+
+      <!-- Password -->
+      <label for="password">Password:</label><br />
+      <input type="password" id="password" name="password" /><br /><br />
+
+      <!-- Radio buttons -->
+      <p>Gender:</p>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label><br />
+
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label><br /><br />
+
+      <!-- Checkbox -->
+      <input type="checkbox" id="subscribe" name="subscribe" />
+      <label for="subscribe">Subscribe to newsletter</label><br /><br />
+
+      <!-- Dropdown -->
+      <label for="country">Country:</label><br />
+      <select id="country" name="country">
+        <option value="mm">Myanmar</option>
+        <option value="us">USA</option>
+        <option value="uk">UK</option></select
+      ><br /><br />
+
+      <!-- Textarea -->
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message"></textarea><br /><br />
+
+      <!-- Submit -->
+      <button type="submit">Submit</button>
     </form>
 
     <hr />
@@ -55,15 +82,22 @@
       <input type="email" id="email" name="email" /><br /><br />
       <input type="submit" />
     </form>
-
     <hr />
-    <h5>Select Tag</h5>
-    <label for="cars">Choose a car:</label>
-    <select id="cars" name="cars">
-      <option value="volvo">Volvo</option>
-      <option value="saab">Saab</option>
-      <option value="fiat">Fiat</option>
-      <option value="audi">Audi</option>
-    </select>
+    <h5>The form autocomplete attribute</h5>
+
+    <p>
+      Fill in and submit the form, then reload the page, start to fill in the
+      form again - and see how autocomplete works.
+    </p>
+
+    <p>Then, try to set autocomplete to "off".</p>
+
+    <form action="/action_page.php" autocomplete="on">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" /><br /><br />
+      <input type="submit" />
+    </form>
   </body>
 </html>
