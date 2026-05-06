@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>METATEAM|MYANMAR</title>
+    <title>METATEAM MYANMAR| Contact</title>
     <link rel="shortcut icon" href="img/mlogo.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/contact.css" />
   </head>
   <body>
-    <form action="/index.html" method="POST">
+    <button onclick="history.back()">Go Back</button>
+    <form action="/Day01_02/index.html" method="GET">
       <fieldset class="contact-group">
         <legend>Contact Information</legend>
 
@@ -44,10 +45,16 @@
             type="tel"
             id="user-phone"
             name="phone"
-            placeholder="123-456-7890"
+            placeholder="09963******"
+            pattern="[0-9]{9,}"
           />
         </div>
+        <div class="field">
+          <button type="submit">Send Message</button>
+        </div>
       </fieldset>
+      <img src="img/smiley-smiley-face.gif" class="img1" alt="" />
+      <img src="img/smiley-smiley-face.gif" class="img2" alt="" />
     </form>
   </body>
 </html>
