@@ -1,0 +1,152 @@
+@charset "UTF-8";
+:root {
+  --primary-color: #8e8e8e;
+}
+
+/* Declare PrimaryFont  */
+@font-face {
+  font-family: "PrimaryFont";
+  src: url("../fonts/EBGaramond-Regular.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "PrimaryFont", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+/* container start  */
+.container {
+  margin: 0 15px 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* container end  */
+
+/* nav bar header start  */
+.nav-bar-header {
+  height: 50px;
+  border: 3px solid var(--primary-color);
+  border-top: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* nav bar header end  */
+
+/* sec nav bar header start  */
+.sec-nav-container {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 55%;
+}
+
+.logo-title {
+  width: 50%;
+  min-height: 100%;
+  border: 3px solid var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tagline {
+  width: 43%;
+  border: 3px solid var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* sec nav bar header end  */
+
+/* main content start  */
+.main-content {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.main-content-left {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 3px solid var(--primary-color);
+}
+.main-content-right {
+  width: 43%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blank-container {
+  width: 100%;
+  height: 50%;
+  border: 3px solid var(--primary-color);
+}
+
+.client-header {
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.client-container {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.client-box {
+  width: 30%;
+  min-height: 70px;
+  border: 3px solid var(--primary-color);
+}
+/* main content end  */
+
+/* service container start  */
+.service-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.service,
+.feature,
+.banner {
+  height: 150px;
+  width: 30%;
+  border: 3px solid var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/* service container end  */
+
+/* footer container start  */
+.footer-container {
+  height: 80px;
+  border: 3px solid var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* footer container end  */
