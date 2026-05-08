@@ -26,8 +26,8 @@ body {
 
 /* container start  */
 .container {
-  margin: 0 15px 0 15px;
   display: flex;
+  margin: 0 15px 0 15px;
   flex-direction: column;
   gap: 20px;
 }
@@ -35,10 +35,10 @@ body {
 
 /* nav bar header start  */
 .nav-bar-header {
+  display: flex;
   height: 50px;
   border: 3px solid var(--primary-color);
   border-top: none;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -46,9 +46,9 @@ body {
 
 /* sec nav bar header start  */
 .sec-nav-container {
+  display: flex;
   width: 100%;
   height: 60px;
-  display: flex;
   justify-content: space-between;
 }
 .logo {
@@ -56,17 +56,17 @@ body {
 }
 
 .logo-title {
+  display: flex;
   width: 50%;
   min-height: 100%;
   border: 3px solid var(--primary-color);
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 .tagline {
+  display: flex;
   width: 43%;
   border: 3px solid var(--primary-color);
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -75,24 +75,24 @@ body {
 
 /* main content start  */
 .main-content {
+  display: flex;
   width: 100%;
   min-height: 300px;
-  display: flex;
   justify-content: space-between;
   align-items: stretch;
 }
 
 .main-content-left {
-  width: 55%;
   display: flex;
+  width: 55%;
   justify-content: center;
   align-items: center;
   text-align: center;
   border: 3px solid var(--primary-color);
 }
 .main-content-right {
-  width: 43%;
   display: flex;
+  width: 43%;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -109,9 +109,9 @@ body {
 }
 
 .client-container {
+  display: flex;
   width: 100%;
   height: 30%;
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -133,10 +133,10 @@ body {
 .service,
 .feature,
 .banner {
+  display: flex;
   height: 150px;
   width: 30%;
   border: 3px solid var(--primary-color);
-  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -145,9 +145,9 @@ body {
 
 /* footer container start  */
 .footer-container {
+  display: flex;
   height: 80px;
   border: 3px solid var(--primary-color);
-  display: flex;
   justify-content: center;
   align-items: center;
 }
