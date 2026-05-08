@@ -6,7 +6,9 @@
 /* Declare PrimaryFont  */
 @font-face {
   font-family: "PrimaryFont";
-  src: url("../fonts/EBGaramond-Regular.ttf") format("truetype");
+  src:
+    url("../fonts/EBGaramond-Regular.ttf") format("truetype"),
+    url("../fonts/EBGaramond-SemiBold.ttf") format("truetype");
 
   font-weight: normal;
   font-style: normal;
