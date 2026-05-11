@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- reset css link -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- custom css link  -->
+    <link rel="stylesheet" href="css/reservation_form.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="reservation-form">
+        <div class="form-container">
+          <h2 class="form-container__ttl">Reservation Form</h2>
+          <form action="" class="form-container__form">
+            <div class="row">
+              <label for="name" class="form-label"
+                >Your Name
+                <span class="required-txt">Required</span>
+              </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Please Fill Your Name"
+                class="form-txt"
+              />
+            </div>
+            <div class="row">
+              <label for="name" class="form-label"
+                >Phonetic spelling
+                <span class="required-txt">Required</span>
+              </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Please Fill Your Name"
+                class="form-txt"
+              />
+            </div>
+            <div class="row">
+              <label for="name" class="form-label"
+                >Your Email Address
+                <span class="required-txt">Required</span>
+              </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Please Fill Your Name"
+                required
+                class="form-txt"
+              />
+            </div>
+            <div class="row">
+              <label for="age" class="form-label"
+                >Your Age
+                <span class="required-txt">Required</span>
+              </label>
+              <input
+                type="text"
+                name="age"
+                id="age"
+                placeholder="Please Fill Your Age"
+                class="form-txt"
+              />
+            </div>
+            <div class="row">
+              <label for="desired-session" class="form-label"
+                >Your desired session
+                <span class="required-txt">Required</span>
+              </label>
+              <select
+                name="desired-session"
+                id="desired-session"
+                class="form-txt"
+              >
+                <option value="hide">▼ Please Select</option>
+                <option value="0">Yes</option>
+                <option value="1">No</option>
+              </select>
+            </div>
+            <div class="row">
+              <div class="txt-width">
+                <p>
+                  &reg; Lorem ipsum dolor, sit amet consectetur adipisicing
+                  elit. Natus iste ratione dolor nostrum minus veniam ipsum,
+                  molestias qui sunt facere. Facere quod consequatur nesciunt
+                  nemo vitae modi sint similique nostrum.
+                </p>
+                <a href="www.google.com" class="link"
+                  >Google is a global technology leader, organizing world
+                  information through search </a
+                >
+                <a href="www.youtube.com" class="link"
+                  >YouTube is the world's leading video platform, allowing users
+                  to upload, share</a
+                >
+              </div>
+            </div>
+            <div class="row">
+              <label for="" class="form-label"
+                >Your Preferred Date and Time
+                <span class="required-txt">Required</span></label
+              >
+              <div class="dt-row">
+                <input
+                  type="text"
+                  placeholder="Please enter your information"
+                  class="dt-row__txt"
+                />
+                <input
+                  type="text"
+                  placeholder="Please enter your information"
+                  class="dt-row__txt"
+                />
+                <input
+                  type="text"
+                  placeholder="Please enter your information"
+                  class="dt-row__txt"
+                />
+                <input
+                  type="text"
+                  placeholder="Please enter your information"
+                  class="dt-row__txt"
+                />
+                <input
+                  type="text"
+                  placeholder="Please enter your information"
+                  class="dt-row__txt"
+                />
+                <input
+                  type="text"
+                  placeholder="Please enter your information"
+                  class="dt-row__txt"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <label for="" class="form-label"
+                >Please briefly describe what you would like to resolve.
+                <span class="required-txt">Required</span></label
+              >
+              <textarea
+                name=""
+                id=""
+                placeholder="please fill your information"
+                rows="8"
+                class="form-txt"
+              ></textarea>
+            </div>
+            <div class="agreement">
+              <input
+                type="checkbox"
+                name="accept"
+                id=""
+                class="form-checkbox"
+              />
+              <label for=""
+                ><a href="" class="text-primary">Privacy Policy</a> I
+                agree</label
+              >
+              <br />
+              <p>
+                *The personal information you provide will be handled in
+                accordance with our privacy policy.
+              </p>
+            </div>
+            <div class="agreement">
+              <input
+                type="checkbox"
+                name="accept"
+                id=""
+                class="form-checkbox"
+              />
+              <label for=""
+                ><a href="" class="text-primary"
+                  >Things we would like you to agree to regarding psychological
+                  support</a
+                >
+                I agree</label
+              >
+              <br />
+              <p>
+                *This document requires your consent regarding psychological
+                support. Please read it carefully, and if possible,<br />
+                print it out and bring it with you to your first session.
+              </p>
+            </div>
+            <button type="submit" class="submit-btn">Make A Reservation</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

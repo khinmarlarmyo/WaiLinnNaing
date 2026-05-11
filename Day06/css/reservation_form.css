@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.text-primary {
+  color: #01a780;
+}
+::placeholder {
+  color: #01a780;
+  font-size: 0.7rem;
+}
+.reservation-form {
+  margin: 50px 0;
+}
+.reservation-form .form-container {
+  max-width: 980px;
+  width: 95%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+.form-container__ttl {
+  position: relative;
+  padding: 10px;
+  margin: 0 auto;
+  font-size: 2rem;
+  color: #272727;
+  text-align: center;
+  width: 480px;
+  border-bottom: 2px solid #78d0bb;
+  border-top: 2px solid #78d0bb;
+}
+
+.form-container__ttl::after {
+  bottom: -7px;
+}
+.form-container__ttl::before {
+  top: 4px;
+}
+.form-container__ttl::before,
+.form-container__ttl::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #78d0bb;
+}
+
+.form-container__form {
+  padding: 50px 0;
+}
+
+.form-container__form .row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.form-container__form .row:nth-child(6) {
+  justify-content: flex-end;
+}
+.form-container__form .form-label {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 31%;
+  line-height: 1.5;
+  margin: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: right;
+}
+.required-txt {
+  font-size: 0.6rem;
+  display: inline-block;
+  background-color: #01a780;
+  border-radius: 15px;
+  padding: 10px 15px;
+  margin-left: 10px;
+  color: #ffffff;
+}
+.form-container__form .form-txt {
+  width: 67%;
+  padding: 15px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  appearance: none;
+  resize: none;
+}
+
+.txt-width {
+  width: 63%;
+}
+
+.link {
+  color: #01a780;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.dt-row {
+  width: 67%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.dt-row__txt {
+  width: 32%;
+  padding: 15px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  appearance: none;
+  resize: none;
+}
+.form-checkbox {
+  width: 20px;
+  height: 20px;
+}
+.agreement {
+  margin: 15px;
+}
+.submit-btn {
+  display: block;
+  padding: 20px;
+  background-color: #514242;
+  border-radius: 10px;
+  color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* SP page  */
+@media (max-width: 760px) {
+  body {
+    box-sizing: border-box;
+  }
+  .form-container__form .row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .form-container__form .form-label {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+  }
+  .form-container__form .form-txt {
+    width: 100%;
+  }
+
+  .form-container__ttl {
+    width: 90%;
+    font-size: 20px;
+  }
+}
