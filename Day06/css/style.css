@@ -1,459 +1,67 @@
-@charset "utf-8";
-
 * {
   box-sizing: border-box;
 }
-
-html {
-  font-size: 10px;
-}
-
-body {
-  background-color: #ffffff;
-  color: #272727;
-  font-family:
-    "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN",
-    "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
-  font-size: 2.2rem;
-  font-weight: 400;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-
-a {
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-}
-
-a:hover {
-  transition: 0.8s;
-  -webkit-transition: 0.8s;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  a:hover {
-    opacity: 0.6;
-  }
-}
-
-img {
-  vertical-align: bottom;
-  max-width: 100%;
-}
-
-.pc {
-  display: block;
-}
-
-.sp {
-  display: none;
-}
-
-.wrapper {
-  margin: 0 auto;
-  max-width: 1920px;
-}
-
-.l-inner {
-  width: 95%;
-  margin: 0 auto;
-  max-width: 980px;
-}
-
-.d-flex {
-  display: flex;
-  align-items: center;
-}
-
-/* Common Title */
-.cmn-ttl {
+/* circle test start  */
+.h3__ttl {
   position: relative;
-  width: 480px;
+  padding-top: 4%;
+  font-size: 30px;
+  width: 400px;
+  height: 200px;
   margin: 0 auto;
-  padding: 12px 0;
-  font-size: 3.2rem;
-  font-weight: 500;
   text-align: center;
-  border-top: 2px solid #01a780;
-  border-bottom: 2px solid #01a780;
+  background: url(../img/img_bg_tit_01.png) no-repeat center;
+}
+.h3__sec-ttl {
+  display: block;
+  font-size: 24px;
+  margin-top: 5%;
 }
 
-.cmn-ttl::before,
-.cmn-ttl::after {
+.h3__ttl::before {
   position: absolute;
+  top: 50%;
   left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #01a780;
   content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #fff000;
+}
+.h3__ttl::after {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  content: "";
+  width: 50%;
+  height: 3px;
+  background-color: #23221b;
 }
 
-.cmn-ttl::before {
-  top: -7px;
-}
+/* circle test end  */
 
-.cmn-ttl::after {
-  bottom: -7px;
-}
-
-/* Reservation Content */
-.sec-reservation {
-  padding: 50px 0;
-}
-
-.sec-reservation .form-blk {
-  padding: 50px 0;
-}
-
-.sec-reservation .row {
+.box {
   display: flex;
-  align-items: flex-start;
-  margin-bottom: 16px;
+  width: 1000px;
+  margin: 0 auto;
+  gap: 20px;
 }
-
-.sec-reservation .row:nth-child(6) {
-  justify-content: flex-end;
+.box-one,
+.box-two {
+  width: 50%;
+  padding: 20px;
 }
-
-.sec-reservation .row:nth-child(9),
-.sec-reservation .row:nth-child(10) {
-  flex-wrap: wrap;
-  line-height: 1.5;
-  font-size: 2rem;
+.box__ttl {
+  position: relative;
+  left: 34px;
+  border-bottom: 2px solid #fff000;
 }
-
-.sec-reservation .cmn-lbl {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 31%;
-  line-height: 1.5;
-  margin: 10px 20px;
-  font-size: 2rem;
-  font-weight: 500;
-  text-align: right;
-}
-
-.sec-reservation .required-txt,
-.sec-reservation .any-txt {
-  display: inline-block;
-  margin-left: 10px;
-  padding: 2px 5px;
-  font-size: 1.2rem;
-  border-radius: 10px;
-}
-
-.sec-reservation .required-txt {
-  background-color: #01a780;
-  color: #ffffff;
-}
-
-.sec-reservation .any-txt {
-  background-color: #f2fcfa;
-  color: #01a780;
-}
-
-.sec-reservation .age-txt {
-  margin-left: 15px;
-  font-size: 2rem;
-}
-
-.sec-reservation .cmn-txt {
-  width: 67%;
-  padding: 12px;
-  border: 1px solid #222223;
-  color: #272727;
-  font-family:
-    "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN",
-    "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
-  font-size: 1.2rem;
-  border-radius: 4px;
-  appearance: none;
-  resize: none;
-}
-
-::placeholder {
-  color: #01a780;
-}
-
-.sec-reservation .row:nth-child(4) .d-flex,
-.sec-reservation .row:nth-child(7) .d-flex {
-  width: 67%;
-}
-
-.sec-reservation .row:nth-child(7) .d-flex {
-  flex-wrap: wrap;
-  gap: 20px 12px;
-}
-
-.sec-reservation .row:nth-child(4) .d-flex .cmn-txt,
-.sec-reservation .row:nth-child(7) .d-flex .cmn-txt {
-  width: 32%;
-}
-
-.sec-reservation .txt-width {
-  width: 65.5%;
-  line-height: 1.5;
-  font-size: 2rem;
-}
-
-.sec-reservation .link-txt {
-  color: #01a780;
-  text-decoration: underline;
-}
-
-.sec-reservation .link-txt + .link-txt {
-  padding-top: 10px;
-}
-
-.sec-reservation input[type="checkbox"] {
+.box__ttl::before {
+  position: absolute;
+  top: 0;
+  left: -55px;
+  content: "";
   width: 20px;
   height: 20px;
-}
-
-.sec-reservation .submit-btn {
-  display: block;
-  width: 240px;
-  margin: 20px auto 0;
-  padding: 10px 0;
-  border: none;
-  background-color: #707070;
-  color: #ffffff;
-  font-family:
-    "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN",
-    "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
-  font-size: 2.6rem;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-/* IPad */
-@media only screen and (min-width: 768px) and (max-width: 1280px) {
-  body {
-    font-size: 1.719vw;
-  }
-
-  .l-inner {
-    width: 100%;
-    padding: 0 5vw;
-    max-width: 100%;
-  }
-
-  /* Common Title */
-  .cmn-ttl {
-    width: 37.5vw;
-    padding: 0.938vw 0;
-    font-size: 2.5vw;
-    border-top: 0.156vw solid #01a780;
-    border-bottom: 0.156vw solid #01a780;
-  }
-
-  .cmn-ttl::before,
-  .cmn-ttl::after {
-    height: 0.156vw;
-  }
-
-  .cmn-ttl::before {
-    top: -0.547vw;
-  }
-
-  .cmn-ttl::after {
-    bottom: -0.547vw;
-  }
-
-  /* Reservation Content */
-  .sec-reservation {
-    padding: 3.906vw 0;
-  }
-
-  .sec-reservation .form-blk {
-    padding: 3.906vw 0;
-  }
-
-  .sec-reservation .row {
-    margin-bottom: 1.25vw;
-  }
-
-  .sec-reservation .row:nth-child(9),
-  .sec-reservation .row:nth-child(10) {
-    font-size: 1.563vw;
-  }
-
-  .sec-reservation .cmn-lbl {
-    margin: 0.781vw 1.563vw;
-    font-size: 1.563vw;
-  }
-
-  .sec-reservation .required-txt,
-  .sec-reservation .any-txt {
-    margin-left: 0.781vw;
-    padding: 0.156vw 0.391vw;
-    font-size: 0.938vw;
-    border-radius: 0.781vw;
-  }
-
-  .sec-reservation .age-txt {
-    margin-left: 1.172vw;
-    font-size: 1.563vw;
-  }
-
-  .sec-reservation .cmn-txt {
-    padding: 0.938vw;
-    border: 0.078vw solid #222223;
-    font-size: 0.938vw;
-    border-radius: 0.313vw;
-  }
-
-  .sec-reservation .row:nth-child(7) .d-flex {
-    gap: 1.563vw 0.938vw;
-  }
-
-  .sec-reservation .txt-width {
-    font-size: 1.563vw;
-  }
-
-  .sec-reservation .link-txt + .link-txt {
-    padding-top: 0.781vw;
-  }
-
-  .sec-reservation input[type="checkbox"] {
-    width: 1.563vw;
-    height: 1.563vw;
-  }
-
-  .sec-reservation .submit-btn {
-    width: 18.75vw;
-    margin: 1.563vw auto 0;
-    padding: 0.781vw 0;
-    font-size: 2.031vw;
-    border-radius: 0.313vw;
-  }
-}
-
-/* SP */
-@media all and (max-width: 767.9px) {
-  body {
-    font-size: 2.868vw;
-  }
-
-  .l-inner {
-    width: 100%;
-    padding: 0 5vw;
-    max-width: 100%;
-  }
-
-  .pc {
-    display: none;
-  }
-
-  .sp {
-    display: block;
-  }
-
-  /* Common Title */
-  .cmn-ttl {
-    width: 62.581vw;
-    padding: 1.565vw 0;
-    font-size: 4.172vw;
-    border-top: 0.261vw solid #01a780;
-    border-bottom: 0.261vw solid #01a780;
-  }
-
-  .cmn-ttl::before,
-  .cmn-ttl::after {
-    height: 0.261vw;
-  }
-
-  .cmn-ttl::before {
-    top: -0.913vw;
-  }
-
-  .cmn-ttl::after {
-    bottom: -0.913vw;
-  }
-
-  /* Reservation Content */
-  .sec-reservation {
-    padding: 6.519vw 0;
-  }
-
-  .sec-reservation .form-blk {
-    padding: 6.519vw 0;
-  }
-
-  .sec-reservation .row {
-    display: block;
-    margin-bottom: 4vw;
-  }
-
-  .sec-reservation .row:nth-child(9),
-  .sec-reservation .row:nth-child(10) {
-    font-size: 3.5vw;
-  }
-
-  .sec-reservation .cmn-lbl {
-    justify-content: flex-start;
-    width: 100%;
-    margin: 1.304vw 0;
-    font-size: 3.5vw;
-  }
-
-  .sec-reservation .required-txt,
-  .sec-reservation .any-txt {
-    margin-left: 1.304vw;
-    padding: 0.8vw 1.25vw;
-    font-size: 2.565vw;
-    border-radius: 1.304vw;
-  }
-
-  .sec-reservation .age-txt {
-    margin-left: 1.956vw;
-    font-size: 3.5vw;
-  }
-
-  .sec-reservation .cmn-txt {
-    width: 100%;
-    padding: 3vw 2vw;
-    border: 0.13vw solid #222223;
-    font-size: 2.565vw;
-    border-radius: 0.522vw;
-  }
-
-  .sec-reservation .row:nth-child(4) .d-flex,
-  .sec-reservation .row:nth-child(7) .d-flex {
-    width: 100%;
-  }
-
-  .sec-reservation .row:nth-child(7) .d-flex {
-    gap: 2.608vw 1.565vw;
-  }
-
-  .sec-reservation .row:nth-child(4) .d-flex .cmn-txt {
-    width: 100%;
-  }
-
-  .sec-reservation .txt-width {
-    width: 100%;
-    font-size: 3.5vw;
-  }
-
-  .sec-reservation .link-txt + .link-txt {
-    padding-top: 1.304vw;
-  }
-
-  .sec-reservation input[type="checkbox"] {
-    width: 2.608vw;
-    height: 2.608vw;
-  }
-
-  .sec-reservation .submit-btn {
-    width: 31.291vw;
-    margin: 2.608vw auto 0;
-    padding: 1.304vw 0;
-    font-size: 3.39vw;
-    border-radius: 0.522vw;
-  }
+  border: 15px solid rgb(19, 194, 19);
+  border-radius: 50%;
 }
