@@ -1,9 +1,7 @@
 @charset "UTF-8";
-
 :root {
   --primary-color: #8e8e8e;
 }
-
 /* Declare PrimaryFont  */
 @font-face {
   font-family: "PrimaryFont";
@@ -24,14 +22,11 @@ body {
   text-transform: uppercase;
   font-size: 1rem;
 }
-
 .d-flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-
 /* container start  */
 .container {
   display: flex;
@@ -39,36 +34,30 @@ body {
   flex-direction: column;
   gap: 20px;
 }
-
-/* nav bar header start  */
+/* nav bar */
 .nav-bar-header {
   height: 50px;
   border: 3px solid var(--primary-color);
   border-top: none;
 }
-
-.sec-nav-container {
+.nav-bar {
   display: flex;
   width: 100%;
   height: 60px;
   justify-content: space-between;
 }
-
 .logo {
   width: 55%;
 }
-
 .logo-title {
   width: 50%;
   min-height: 100%;
   border: 3px solid var(--primary-color);
 }
-
 .tagline {
   width: 43%;
   border: 3px solid var(--primary-color);
 }
-
 .main-content {
   display: flex;
   width: 100%;
@@ -76,31 +65,26 @@ body {
   justify-content: space-between;
   align-items: stretch;
 }
-
 .main-content-left {
   width: 55%;
   text-align: center;
   border: 3px solid var(--primary-color);
 }
-
 .main-content-right {
   display: flex;
   width: 43%;
   flex-direction: column;
   justify-content: space-between;
 }
-
 .blank-container {
   width: 100%;
   height: 50%;
   border: 3px solid var(--primary-color);
 }
-
 .client-header {
   margin-top: 25px;
   margin-bottom: 5px;
 }
-
 .client-container {
   display: flex;
   width: 100%;
@@ -108,20 +92,16 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-
 .client-box {
   width: 30%;
   min-height: 70px;
   border: 3px solid var(--primary-color);
 }
-
-
 .service-container {
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
-
 .service,
 .feature,
 .banner {
@@ -130,8 +110,6 @@ body {
   border: 3px solid var(--primary-color);
   text-align: center;
 }
-
-
 .footer-container {
   height: 80px;
   border: 3px solid var(--primary-color);

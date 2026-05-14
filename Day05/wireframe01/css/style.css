@@ -52,13 +52,11 @@
   align-items: center;
   padding: 58px 0;
 }
-
 .article-container {
   width: 100%;
   min-height: 300px;
   margin: 0 250px;
 }
-
 .article-container div {
   box-sizing: border-box;
   text-align: center;
