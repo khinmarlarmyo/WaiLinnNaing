@@ -6,8 +6,8 @@
   display: none;
 }
 
-.slide-toggle   {
-  margin:0;
+.slide-toggle {
+  margin: 0;
   box-sizing: border-box;
   width: 100%;
   padding: 20px;
@@ -16,4 +16,25 @@
 
 .slideToggle-img img {
   width: 200px;
+}
+
+.sidewalk {
+  width: 100%;
+  height: 150px;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.walker {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  transition: transform 0.3s;
+}
+
+/* img change face side  */
+.facing-left {
+  transform: scaleX(-1);
 }

@@ -9,7 +9,7 @@ body {
 * {
   color: inherit;
 }
-
+ 
 .dark-mode {
   background-color: #2f2c2c;
   color: #cae0f3;
@@ -55,25 +55,4 @@ select {
 .gif-img {
   position: absolute;
   right: 0;
-}
-
-.sidewalk {
-  width: 100%;
-  height: 150px;
-  background: transparent;
-  position: relative; 
-  overflow: hidden; 
-}
-
-.walker {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 100px; 
-  transition: transform 0.3s; 
-}
- 
-/* img change face side  */
-.facing-left {
-  transform: scaleX(-1);
 }

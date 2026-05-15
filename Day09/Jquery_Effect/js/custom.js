@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    walkLoop()
     function showH1(){
         $(".hide-txt").show(1000);
     }
@@ -26,4 +27,19 @@ $(document).ready(function () {
         $(".j-chain-txt").slideUp(2000).slideDown(2000);
         // $(".j-chain-txt").fadeOut(2000).fadeIn(2000);
     })
+
+    
+function walkLoop() {
+    var $person = $(".walker");
+    var $path = $(".sidewalk");
+     
+    var travelDistance = $path.width() - $person.width(); 
+    $person.animate({ left: travelDistance }, 10000, "linear", function() { 
+        $person.removeClass("facing-left"); 
+        $person.animate({ left: "0px" }, 10000, "linear", function() { 
+            $person.addClass("facing-left"); 
+            walkLoop();
+        });
+    });
+}
 });

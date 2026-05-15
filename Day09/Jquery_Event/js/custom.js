@@ -1,5 +1,4 @@
-$(document).ready(function () {
-    walkLoop()
+$(document).ready(function () { 
     $("h1").html("Hello, World!");// testing basic step
 
     $("div").click(function () {
@@ -97,18 +96,5 @@ $(window).scroll(function() {
 });
  
 
-function walkLoop() {
-    var $person = $(".walker");
-    var $path = $(".sidewalk");
-     
-    var travelDistance = $path.width() - $person.width(); 
-    $person.animate({ left: travelDistance }, 10000, "linear", function() { 
-        $person.removeClass("facing-left"); 
-        $person.animate({ left: "0px" }, 10000, "linear", function() { 
-            $person.addClass("facing-left"); 
-            walkLoop();
-        });
-    });
-}
  
 }); 
