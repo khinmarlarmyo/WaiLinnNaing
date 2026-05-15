@@ -1,0 +1,19 @@
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+.slide-toggle   {
+  margin:0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  background-color: #fffccc;
+}
+
+.slideToggle-img img {
+  width: 200px;
+}
