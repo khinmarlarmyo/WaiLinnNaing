@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.accordion-item {
+  margin: 10px;
+}
+
+.accordion__ttl {
+  font-size: 24px;
+  padding: 20px;
+  background-color: #a792bb;
+  position: relative;
+}
+
+.accordion__ttl::after {
+  content: "\002B";
+  position: absolute;
+  right: 40px;
+  cursor: pointer;
+}
+
+.accordion-item__active {
+  display: block;
+}
+
+.accordion-item__active .accordion__ttl::after {
+  content: "\2212";
+}
+
+.accordion__des {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.3s linear;
+}
+
+.accordion-item__active .accordion__des {
+  height: auto;
+  opacity: 1;
+  transform: scale(1);
+}
+
+ul li {
+  padding: 10px;
+}
+
+ul li>a {
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  padding: 10px;
+}
+
+ul li>a:hover{
+  background-color: #606036; 
+}
+/* hover accordion  */
+
+.hover__ttl {
+  padding: 20px;
+  background-color: #7e9c6a;
+  margin: 10px;
+  position: relative;
+}
+
+.hover__des {
+  margin: 10px;
+  padding: 5px;
+}
+
+.hover__ttl::before {
+  content: "\002B";
+  right: 40px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.hover-accordion__active .hover__ttl::before {
+  content: "\2212";
+}
+
+.hover__des {
+  display: none;
+  overflow: hidden;
+}
