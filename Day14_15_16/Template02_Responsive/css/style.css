@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+:root {
+  --text-primary: #141414;
+  --text-secondary: #EFEFEF;
+  --text-orange: #FF8364;
+
+  --btn-bg: #FF8364;
+  --btn-text: #FFFFFF;
+  --btn-border: #707070;
+}
+
+@font-face {
+  font-family: 'IBMPlexSan-Rg';
+  src: url('../fonts/IBMPlexSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'IBMPlexSan-Md';
+  src: url('../fonts/IBMPlexSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'IBMPlexSan-Bd';
+  src: url('../fonts/IBMPlexSans-Bold.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'IBMPlexSan-Rg', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+
+}
+
+/* common classes  */
+
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.ft-ibm-bold {
+  font-family: 'IBMPlexSan-Bd', sans-serif;
+}
+
+.ft-ibm-regular {
+  font-family: 'IBMPlexSan-Rg', sans-serif;
+}
+
+.ft-ibm-medium {
+  font-family: 'IBMPlexSan-Md', sans-serif;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.color-primary {
+  color: var(--text-primary);
+}
+
+.color-secondary {
+  color: var(--text-secondary);
+}
+
+.color-orange {
+  color: var(--text-orange);
+}
+
+/* header section */
+.header-sec {
+  background-image: url("../img/banner_background.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding-bottom: 80px;
+}
+
+.navbar {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 35px 40px;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  padding: 8px 28px;
+}
+
+.nav-item.active a {
+  background-color: var(--btn-bg);
+  color: var(--text-secondary) !important;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* menu bar  */
+.menu-bar {
+  width: 40px;
+  height: 30px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: -18px;
+}
+
+.menu-bar span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--btn-bg);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* banner section */
+.banner-sec {
+  padding: 70px 55px 50px 55px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.banner__icon {
+  padding-bottom: 35px;
+}
+
+.banner__ttl {
+  font-size: 64px;
+  line-height: 78px;
+}
+
+.banner__des {
+  line-height: 30px;
+  padding: 3px 5px 0px 5px;
+}
+
+.banner__btn {
+  padding: 8px 40px;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border: 1px solid var(--btn-border);
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 27px 0px;
+}
+
+/* for tablet  */
+@media only screen and (min-width:768px) and (max-width:1024px) {}
+
+/* for mobile  */
+@media all and (max-width:767.9px) {
+  /* comon classes  */
+
+  .fs-14 {
+    font-size: 1.823vw;
+  }
+
+  .fs-16 {
+    font-size: 2.083vw;
+  }
+
+  .fs-18 {
+    font-size: 2.344vw;
+  }
+
+  .fs-20 {
+    font-size: 2.604vw;
+  }
+
+  .header-sec {
+    padding-bottom: 10.417vw;
+  }
+
+  .navbar {
+    /* max-width: 640px; */
+    margin: 0 auto;
+    padding: 5.557vw 5.208vw;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .menu-bar {
+    align-items: normal;
+    display: flex;
+  }
+
+  /* banner section  */
+  .banner-sec {
+    max-width: 580px;
+    /* width: 100%; */
+    padding: 0;
+    margin: 50px auto;
+  }
+
+  .banner__icon {
+    padding-bottom: 4.557vw;
+  }
+
+  .banner__ttl {
+    font-size: 45px;
+    line-height: 60px;
+  }
+
+  .banner__des {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'IBMPlexSan-Rg', sans-serif;
+    padding: 0;
+  }
+
+  .banner__btn {
+    padding: 1.042vw 5.208vw;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: 0.13vw solid var(--btn-border);
+    cursor: pointer;
+    border-radius: 0.651vw;
+    margin: 3.516vw 0px;
+  }
+
+}
