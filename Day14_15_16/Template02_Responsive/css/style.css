@@ -363,7 +363,7 @@ a.contact-btn {
 
 
 .fourth-link-sec {
-  padding: 67px 0px 65px 0px;
+  padding: 68px 0px 65px 0px;
 }
 
 .fourth__ttl {
@@ -438,7 +438,7 @@ a.contact-btn {
 
 /* feedback sec  */
 .feedback-sec {
-  padding: 103px 0px 100px 0px;
+  padding: 103px 0px 97px 0px;
 }
 
 .map {
@@ -785,7 +785,7 @@ a.contact-btn {
 
   .fifth-link-item {
     width: 50%;
-    padding: 0px; 
+    padding: 0px;
   }
 
   .pf__name-ps {
@@ -1189,7 +1189,8 @@ a.contact-btn {
   }
 
   .ft__logo-img {
-    width: 100%;
+    width: 83%;
+
   }
 
   .categories {
