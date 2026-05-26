@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slick Slider Example</title>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+<link rel="stylesheet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+ 
+ 
+  <style>
+    .slider-container1 {
+      width: 80%;
+      margin: 50px auto;
+    }
+
+    .slide-item {
+      background: #3498db;
+      color: #fff;
+      padding: 40px;
+      font-size: 24px;
+      text-align: center;
+      border: 5px solid #fff;
+      /* Adds spacing between slides */
+      border-radius: 8px;
+    }
+
+    /* Styling the custom arrows or dots if needed */
+    .slick-prev:before,
+    .slick-next:before {
+      color: #2c3e50;
+      /* Changes default arrow color from white to dark blue */
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="slider-container1">
+    <div class="my-slider">
+      <div class="slide-item">
+        <h3>Slide 1</h3>
+      </div>
+      <div class="slide-item">
+        <h3>Slide 2</h3>
+      </div>
+      <div class="slide-item">
+        <h3>Slide 3</h3>
+      </div>
+      <div class="slide-item">
+        <h3>Slide 4</h3>
+      </div>
+      <div class="slide-item">
+        <h3>Slide 5</h3>
+      </div>
+      <div class="slide-item">
+        <h3>Slide 6</h3>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+
+  <script type="text/javascript"
+    src="js/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.my-slider').slick({
+        dots: true,                // Shows navigation dots at the bottom
+        infinite: true,            // Infinite looping
+        speed: 300,                // Transition speed (ms)
+        slidesToShow: 1,           // Number of slides to show at once
+        slidesToScroll: 1,         // Number of slides to scroll at a time
+        autoplay: true,            // Enables auto-advancing slides
+        autoplaySpeed: 2000,       // Delay between auto-advances (ms)
+
+        // Responsive Breakpoints
+        responsive: [
+          {
+            breakpoint: 1024,  // Screens smaller than 1024px
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,   // Screens smaller than 600px
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false  // Hide arrows on small screens for better UX
+            }
+          }
+        ]
+      });
+    });
+  </script>
+
+</body>
+
+</html>

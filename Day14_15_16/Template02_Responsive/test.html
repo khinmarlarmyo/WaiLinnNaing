@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <style>
+      .container{
+        width: 80%;
+        margin: 100px auto;
+      }
+      .sliders{
+        display: flex;
+      }
+      .slide{
+        background-color: blue;
+        color: wheat;
+        padding: 30px;
+      }
+
+      .slick-prev:before,
+    .slick-next:before {
+      color: #2c3e50;
+      /* Changes default arrow color from white to dark blue */
+    }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sliders">
+      <div class="slide">
+        <h1>hello World</h1>
+      </div>
+      <div class="slide">
+        <h1>hello  II</h1>
+      </div>
+      <div class="slide">
+        <h1>hello III</h1>
+      </div>
+    </div>
+  </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script> 
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.sliders').slick({
+           infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        })
+      })
+    </script>
+</body>
+</html>

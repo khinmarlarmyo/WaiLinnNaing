@@ -35,9 +35,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
+
 body {
   background-color: #ffffff;
   font-family: 'IBMPlexSan-Rg', sans-serif;
@@ -319,8 +321,33 @@ a.contact-btn {
 }
 
 /* second link  */
+.second-link-sec {
+  height: 500px;
+  
+  position: relative;
+}
+
+.mySecondlink {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* --- Your Original Styles (Floats Saved) --- */
 .sec-wrap {
   padding: 93px 0px 97px 0px;
+  clear: both;
+}
+
+/* Clearfix hack to make Swiper register your floating divs properly */
+.sec-wrap::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .second__lt {
@@ -469,7 +496,7 @@ a.contact-btn {
 .fifth-link-items {
   gap: 30px;
   padding-top: 55px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .fifth-link-item {
@@ -793,7 +820,7 @@ a.contact-btn {
   .fifth-link-sec {
     padding: 12.891vw 0vw 1.302vw 0.781vw;
   }
-
+/* 
   .fifth-link-items {
     max-width: 800px;
     margin: 0 auto;
@@ -809,7 +836,7 @@ a.contact-btn {
 
   .pf__name-ps {
     padding: 7.943vw 7.813vw 6.25vw 7.813vw;
-  }
+  } */
 
   /* feedback sec  */
   .feedback-sec {
@@ -1077,9 +1104,6 @@ a.contact-btn {
     gap: 6.563vw 6.25vw;
   }
 
-  /* .ft-card {
-    width: calc(50% - 15px)px;
-  } */
 
 
 
@@ -1121,7 +1145,7 @@ a.contact-btn {
 
   /* feedback sec  */
   .feedback-sec {
-    display: block; 
+    display: block;
     padding: 3.8063vw 4.688vw 6.875vw 4.688vw;
     ;
   }
@@ -1176,4 +1200,20 @@ a.contact-btn {
     margin: 0 0px 4.531vw 0px;
     padding: 0 !important;
   }
+}
+
+/* for sliders  */
+
+
+.slick-prev:before,
+.slick-next:before {
+  color: var(--btn-bg) !important;
+}
+
+.ft-card__img {
+  width: 100%;
+}
+
+.ft-items .slick-slide {
+  margin: 0 15px;
 }
