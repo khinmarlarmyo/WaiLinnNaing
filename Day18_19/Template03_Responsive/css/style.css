@@ -125,13 +125,14 @@
 }
 
 .navbar-sec {
-  padding: 27px 0px;
+  padding: 27px 0px 31px;
 }
 
 .logo-ttl {
   max-width: 620px;
   font-size: 47px;
   letter-spacing: -2.82px;
+  padding-top: 11px;
 }
 
 .nav-items {
@@ -183,11 +184,11 @@
   padding: 33px 10px 0 3px;
 }
 
-.banner-form {
+.cmn-form {
   padding: 76px 0px;
 }
 
-.banner-btn {
+.form-btn {
   font-size: 23px;
   letter-spacing: 0.92px;
   padding: 20px 54px;
@@ -196,7 +197,7 @@
   border: none;
 }
 
-.input-com {
+.form-input {
   font-size: 20px;
   letter-spacing: 0.8px;
   max-width: 387px;
@@ -212,7 +213,7 @@
 
 /* feature sec  */
 .feature-sec {
-  padding: 80px 0px 19px;
+  padding: 79px 0px 19px;
   background-color: var(--bg-secondary);
 }
 
@@ -282,15 +283,128 @@
 }
 
 /* management sec  */
-.management-sec{
+.management-sec {
   padding: 87px 0 86px;
 }
+
 .management-lt {
   max-width: 622px;
   width: 100%;
   padding-top: 75px;
+  margin-right: 82px;
 }
 
-.management-img{
+.management-img {
   width: 100%;
+}
+
+.management-rt {
+  max-width: 555px;
+  width: 100%;
+  min-height: 439px;
+  padding: 0px 2px;
+}
+
+.management-ttl {
+  font-size: 50px;
+  line-height: 60px;
+  padding-top: 6px;
+}
+
+.management-des {
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 24px;
+  padding-bottom: 36px;
+}
+
+.management-btn {
+  font-size: 23px;
+  letter-spacing: 0.84px;
+  display: inline-block;
+  padding: 27px 44px 23px;
+  background-color: var(--border-outline-primary);
+  border-radius: 40px;
+  text-decoration: none;
+}
+
+/* team sec  */
+.team-sec {
+  padding: 136px 0px;
+  background-color: var(--bg-secondary);
+}
+
+.team-lt {
+  max-width: 555px;
+  width: 100%;
+  margin-left: 68px;
+  margin-right: 80px;
+  text-align: right;
+  padding-top: 15px;
+  padding-left: 1px;
+}
+
+.team-ttl {
+  font-size: 50px;
+  line-height: 60px;
+
+}
+
+.team-des {
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 35px;
+}
+
+.team-social {
+  padding-top: 51px;
+}
+
+.link-icon:not(:last-child) {
+  display: inline-block;
+  margin-right: 64px;
+}
+
+.team-img {
+  width: 100%;
+}
+
+.team-rt {
+  max-width: 575px;
+  width: 100%;
+}
+
+/* workdone sec  */
+.workdone-sec {
+  padding: 100px 0;
+}
+
+.workdone-ttl {
+  font-size: 50px;
+  line-height: 60px;
+  max-width: 787px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.workdone-des {
+  font-size: 27px;
+  line-height: 35px;
+  padding-top: 15px;
+  max-width: 552px;
+  margin: 0 auto;
+}
+
+.workdone-form {
+  max-width: 661px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* footer sec  */
+.footer-sec {
+  padding: 50px 0;
+  background-color: var(--bg-secondary);
+  font-size: 18px;
+  color: var(--text-secondary);
 }
