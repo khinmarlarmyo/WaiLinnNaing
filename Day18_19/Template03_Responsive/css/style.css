@@ -381,8 +381,7 @@ input {
 }
 
 .team-social {
-  padding-top: 51px;
-  /* max-height: 55px; */
+  padding-top: 51px; 
 }
 
 
@@ -723,8 +722,7 @@ input {
   }
 
   .navbar-sec {
-    padding: 2.66vw 0px 3.13vw;
-    /* z-index: 999; */
+    padding: 2.66vw 0px 3.13vw; 
 
   }
 
