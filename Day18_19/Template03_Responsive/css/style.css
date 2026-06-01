@@ -163,15 +163,18 @@ input {
 
 }
 
+
 .try-btn:hover {
   background-color: var(--border-outline-primary);
   cursor: pointer;
   color: var(--text-white);
 }
 
+
+
 .cmn-btn-hover:hover {
   background-color: transparent;
-  border: 2px solid var(--border-outline-primary);
+  border: 1px solid var(--border-outline-primary);
 
   cursor: pointer;
   color: var(--text-primary);
@@ -379,7 +382,9 @@ input {
 
 .team-social {
   padding-top: 51px;
+  /* max-height: 55px; */
 }
+
 
 .link-icon:not(:last-child) {
   display: inline-block;
@@ -718,7 +723,7 @@ input {
   }
 
   .navbar-sec {
-    padding: 2.656vw 0px 3.125vw;
+    padding: 2.66vw 0px 3.13vw;
     /* z-index: 999; */
 
   }
@@ -726,114 +731,114 @@ input {
   .logo-ttl {
     max-width: none;
     font-size: 6.25vw;
-    letter-spacing: -0.375vw;
-    padding-top: 1.719vw;
+    letter-spacing: -0.38vw;
+    padding-top: 1.72vw;
   }
 
   .nav-items {
-    margin-left: 7.813vw;
+    margin-left: 7.81vw;
     max-width: none;
     flex-shrink: 0;
   }
 
   .try-btn {
-    font-size: 2.813vw;
-    line-height: 4.219vw;
-    border-radius: 4.688vw;
-    padding: 1.875vw 5.156vw;
-    margin-top: 0.781vw;
+    font-size: 2.81vw;
+    line-height: 4.22vw;
+    border-radius: 4.69vw;
+    padding: 1.88vw 5.16vw;
+    margin-top: 0.78vw;
   }
 
 
   /* banner sec  */
   .banner-sec {
     display: block;
-    padding: 10.938vw 0 3.906vw;
+    padding: 10.94vw 0 3.91vw;
 
   }
 
   .banner-lt {
     max-width: 100%;
-    padding-top: 3.438vw;
+    padding-top: 3.44vw;
 
   }
 
   .banner-rt {
     max-width: 100%;
-    margin: 3.906vw 3.438vw 3.438vw;
+    margin: 3.91vw 3.44vw 3.44vw;
   }
 
   .banner-ttl {
     font-size: 6.25vw;
-    line-height: 10.938vw;
-    letter-spacing: -0.28px;
+    line-height: 10.94vw;
+    letter-spacing: -0.26px;
   }
 
   .banner-des {
     font-size: 2.5vw;
-    line-height: 4.688vw;
-    padding: 3.281vw 0px 0 0px;
+    line-height: 4.69vw;
+    padding: 3.28vw 0px 0 0px;
     ;
   }
 
   .cmn-form {
-    padding: 3.906vw 0px;
+    padding: 3.91vw 0px;
     justify-content: flex-start;
   }
 
   .form-btn {
     font-size: 2.5vw;
-    letter-spacing: 0.103vw;
-    padding: 2.031vw 5.313vw;
+    letter-spacing: 0.1vw;
+    padding: 2.03vw 5.31vw;
     border-radius: 6.25vw;
   }
 
   .form-input {
-    font-size: 2.188vw;
-    letter-spacing: 0.088vw;
+    font-size: 2.19vw;
+    letter-spacing: 0.09vw;
     max-width: 38.75vw;
     width: 100%;
-    padding: 2.656vw 3.594vw;
-    margin-right: 0.781vw;
-    border-radius: 7.344vw;
+    padding: 2.66vw 3.59vw;
+    margin-right: 0.78vw;
+    border-radius: 7.34vw;
   }
 
   /* feature sec  */
   .feature-sec {
-    padding: 5.625vw 0 0;
+    padding: 5.25vw 0 0;
     background-color: var(--bg-secondary);
   }
 
   .feature-ttl {
-    font-size: 5.938vw;
-    line-height: 9.375vw;
-    padding: 2.031vw 4vw;
+    font-size: 5.94vw;
+    line-height: 9.38vw;
+    padding: 2.03vw 4vw;
   }
 
   .feature-items {
     display: block;
-    padding: 2.656vw 2.813vw;
+    padding: 2.66vw 2.81vw;
     flex-wrap: wrap;
     align-items: flex-start;
   }
 
   .feature-item {
-    max-width: 51.563vw;
+    max-width: 51.56vw;
     width: 100%;
-    margin: 0 auto 4.688vw !important;
+    margin: 0 auto 4.69vw !important;
     color: var(--text-black);
-    border-radius: 1.719vw;
+    border-radius: 1.72vw;
     background-color: var(--bg-card);
   }
 
   .feature-content {
-    padding: 0px 4.219vw 5.781vw;
+    padding: 0px 4.22vw 5.78vw;
     margin: 0 !important;
   }
 
   .feature-img-box {
-    max-width: 51.563vw;
-    padding: 7.031vw 6.25vw 7.813vw
+    max-width: 51.56vw;
+    padding: 7.03vw 6.25vw 7.81vw
   }
 
   .feature-img {
@@ -841,27 +846,27 @@ input {
   }
 
   .feature-item-ttl {
-    font-size: 4.688vw;
+    font-size: 4.69vw;
     line-height: 6.25vw;
-    padding: 0 4.688vw 4.688vw 4.688vw;
+    padding: 0 4.69vw 4.69vw 4.69vw;
   }
 
   .feature-item-des {
     font-size: 2.5vw;
-    line-height: 4.063vw;
-    padding: 0px 1.563vw;
+    line-height: 4.06vw;
+    padding: 0px 1.56vw;
   }
 
 
   /* management sec  */
   .management-sec {
     flex-direction: column-reverse;
-    padding: 6.563vw 0 13.438vw;
+    padding: 6.56vw 0 13.44vw;
   }
 
   .management-lt {
     max-width: 100%;
-    padding-top: 7.344vw;
+    padding-top: 7.34vw;
   }
 
   .management-img {
@@ -876,30 +881,30 @@ input {
   }
 
   .management-ttl {
-    font-size: 5.938vw;
-    line-height: 9.375vw;
-    padding-top: 0.938vw;
+    font-size: 5.94vw;
+    line-height: 9.38vw;
+    padding-top: 0.94vw;
   }
 
   .management-des {
     font-size: 2.5vw;
-    line-height: 4.688vw;
+    line-height: 4.69vw;
     padding-top: 3.75vw;
-    padding-bottom: 5.469vw;
+    padding-bottom: 5.47vw;
   }
 
   .management-btn {
-    font-size: 2.813vw;
-    padding: 3.125vw 3.281vw 2.813vw;
+    font-size: 2.81vw;
+    padding: 3.13vw 3.28vw 2.81vw;
     background-color: var(--border-outline-primary);
-    border-radius: 4.688vw;
+    border-radius: 4.69vw;
     text-decoration: none;
   }
 
 
   /* team sec  */
   .team-sec {
-    padding: 5vw 0px 7.031vw;
+    padding: 5vw 0px 7.03vw;
     background-color: var(--bg-secondary);
   }
 
@@ -912,29 +917,42 @@ input {
     margin-left: unset;
     margin-right: unset;
     text-align: right;
-    padding-top: 1.875vw;
+    padding-top: 1.88vw;
   }
 
   .team-ttl {
     font-size: 6.25vw;
-    line-height: 9.375vw;
+    line-height: 9.38vw;
 
   }
 
   .team-des {
     font-size: 2.5vw;
-    line-height: 4.688vw;
-    padding-top: 2.969vw;
-    padding-left: 0.313vw;
+    line-height: 4.69vw;
+    padding-top: 2.97vw;
+    padding-left: 0.31vw;
   }
 
   .team-social {
     padding-top: 5vw;
   }
 
-  .link-icon:not(:last-child) {
+  .link-icon {
     display: inline-block;
-    margin-right: 7.031vw;
+    max-width: 9.38vw;
+    min-height: 9.38vw;
+  }
+
+  .link-icon img {
+    width: 100%;
+  }
+
+  .link-icon:not(:last-child) {
+    margin-right: 7.03vw;
+  }
+
+  .link-icon img {
+    width: 100%;
   }
 
   .team-img {
@@ -942,9 +960,9 @@ input {
   }
 
   .team-rt {
-    max-width: 84.375vw;
+    max-width: 84.38vw;
     width: 97%;
-    margin-top: 3.594vw;
+    margin-top: 3.26vw;
   }
 
 
@@ -955,28 +973,37 @@ input {
 
   .workdone-ttl {
     font-size: 6.25vw;
-    line-height: 9.375vw;
+    line-height: 9.38vw;
     max-width: 100%;
     margin: 0 auto;
   }
 
   .workdone-des {
-    font-size: 3.906vw;
-    line-height: 5.469vw;
-    padding-top: 3.438vw;
+    font-size: 3.91vw;
+    line-height: 5.47vw;
+    padding-top: 3.44vw;
     max-width: 100%;
     margin: 0 auto;
   }
 
   .workdone-form {
     max-width: 100%;
-    width: 100%;
-    padding: 1.719vw 3.125vw 3.125vw 10.938vw;
+    width: 75%;
+    padding: 1.72vw 0vw 3.13vw 0vw;
   }
 
   /* footer sec  */
   .footer-sec {
-    padding: 7.813vw 0;
-    font-size: 2.813vw;
+    padding: 7.81vw 0;
+    font-size: 2.81vw;
+  }
+
+  .footer-sec>div {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-sec>div>span {
+    display: block;
   }
 }
