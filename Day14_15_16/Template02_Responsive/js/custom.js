@@ -1,8 +1,14 @@
-$(document).ready(function () {
-    $('.menu-bar').click(function () {
-        $(this).toggleClass('is-active');
-        $('.nav').toggleClass('is-active');
 
-        $('.nav-items').toggleClass('is-active');
-    });
+$(document).ready(function() {
+   
+  $('.menu-bar').on('click', function() {
+    $('.menu-bar, .nav').toggleClass('is-active');
+  });
+ 
+  $(window).on('scroll', function() {
+    if ($('.menu-bar').hasClass('is-active')) {
+      $('.menu-bar, .nav').removeClass('is-active');
+    }
+  });
+
 });
