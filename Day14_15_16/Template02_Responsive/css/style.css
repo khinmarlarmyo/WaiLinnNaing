@@ -168,7 +168,7 @@ a.text-deco-none {
   padding-bottom: 80px;
 }
 
-.header {
+.h-inner {
   max-width: 1360px;
   margin: 0 auto;
   padding: 35px 0px;
@@ -662,7 +662,7 @@ textarea:focus {
     width: 40%;
   }
 
-  .header {
+  .h-inner {
     align-items: normal;
     padding: 4.56vw 5.21vw;
     position: relative;
@@ -1038,7 +1038,7 @@ textarea:focus {
     padding-bottom: 4.317vw;
   }
 
-  .header {
+  .h-inner {
     margin: 0 auto;
     padding: 5.938vw 4.531vw 5.156vw 4.688vw;
     align-items: normal;
