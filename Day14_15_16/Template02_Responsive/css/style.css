@@ -438,12 +438,10 @@ a.text-deco-none {
 .ft-card-img {
   width: 100%;
 }
-
-
-/* slider link   */
+ 
 .slider-link-sec {
-  max-width: 100%;
-  width: 97%;
+  max-width: 1110px;
+  width: 100%;
   padding: 0;
   margin: 0 auto;
 }
@@ -456,19 +454,21 @@ a.text-deco-none {
   padding: 14px 0px;
 }
 
+
 .slider-item {
   background-color: var(--secondary-bg);
   border-radius: 5px;
   margin-bottom: 30px;
-  margin-right: 15px;
+  display: flex !important;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
 }
 
-.slick-prev,
-.slick-next {
-  z-index: 10;
-  background-color: #333;
-  /* Change as needed to match your theme */
-  border-radius: 50%;
+.slider-item-img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .slider-item-ttl {
@@ -484,92 +484,82 @@ a.text-deco-none {
   font-family: 'IBMPlexSan-Bd', sans-serif;
   font-size: 16px;
   text-align: center;
-  line-height: 9px;
+  line-height: 1.4;
   padding: 0px 20px;
   margin-bottom: 36px;
 }
 
-.slider-item-img {
-  width: 100%;
+.slider-items .slick-slide {
+  margin: 0 15px;
+  cursor: grab;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
 }
 
+.slider-items .slick-slide:active {
+  cursor: grabbing;
+}
+
+.slider-items .slick-current {
+  opacity: 1;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 10;
+  background-color: #333;
+  border-radius: 50%;
+}
 
 .slick-prev:before,
 .slick-next:before {
   color: var(--btn-bg) !important;
 }
 
-
-
-.slider-items .slick-slide {
-  margin: 0 15px;
-  /* Card တစ်ခုချင်းစီရဲ့ ဘေးဘယ်ညာ Spacing */
-  cursor: grab;
+/* Custom Navigation on Slider  */
+.slider-items .slick-dots li button:before {
+  display: none !important;
+  content: "" !important;
 }
 
-/* --- Slick Dots (Indicator) Custom Styling --- */
-.slick-dots {
+.slider-items .slick-dots {
   position: absolute;
-  bottom: -20px;
-  /* Slider ရဲ့ အောက်ဘက် နေရာအကွာအဝေး */
-  display: block;
+  bottom: -30px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   padding: 0;
-  margin: 0;
+  margin: 0 0 20px;
   list-style: none;
-  text-align: center;
-  /* အလယ်တည့်တည့် ရောက်အောင် */
 }
 
-.slick-dots li {
-  position: relative;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-  padding: 0;
-  cursor: pointer;
+.slider-items .slick-dots li {
+  width: 30px !important;
+  height: 5px !important;
+  margin: 0 4px !important;
+  padding: 0 !important;
+  background: transparent !important;
 }
 
-.slick-dots li button {
-  font-size: 0;
-  line-height: 0;
-  display: block;
-  width: 20px;
-  height: 20px;
-  padding: 5px;
-  cursor: pointer;
-  color: transparent;
-  border: 0;
-  outline: none;
-  background: transparent;
+.slider-items .slick-dots li button {
+  display: block !important;
+  width: 30px !important;
+  height: 5px !important;
+  padding: 0 !important;
+  background-color: #333 !important;
+  opacity: 0.35;
+  border: 0 !important;
+  outline: none !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  border-radius: 0 !important;
+  transition: opacity 0.3s ease;
 }
 
-/* Indicator စက်ဝိုင်းအစက်လေးတွေရဲ့ ပုံစံ */
-.slick-dots li button:before {
-  font-family: 'slick';
-  font-size: 10px;
-  /* စက်ဝိုင်းအရွယ်အစား */
-  line-height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  content: '•';
-  /* အစက်ပုံစံ */
-  text-align: center;
-  opacity: .25;
-  /* မရွေးထားတဲ့ အစက်တွေရဲ့ မှိန်နှုန်း */
-  color: #333;
-  /* အစက်ရဲ့ ကာလာ (သင့် theme အလိုက် ပြောင်းနိုင်ပါတယ်) */
-}
-
-/* လက်ရှိ ရောက်နေတဲ့ slide က indicator အစက်ကို ပိုလင်းအောင် လုပ်တာ */
-.slick-dots li.slick-active button:before {
-  opacity: .75;
-  color: #333;
-  /* Active ဖြစ်နေတဲ့ အစက်ရဲ့ ကာလာ */
+.slider-items .slick-dots li.slick-active button {
+  opacity: 0.75;
+  background-color: var(--btn-bg) !important;
 }
 
 /* fifth card  */
@@ -754,6 +744,100 @@ textarea:focus {
   padding-top: 28px;
   padding-right: 20px;
 }
+
+/* scroll to top hover  */
+.scroll-top-wrapper {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  display: none;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.tp-arrow {
+  display: inline-block;
+  transform: rotate(-90deg);
+}
+
+.quick-nav-menu {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  background-color: var(--primary-bg);
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.95) translateY(10px);
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.quick-nav-menu a {
+  color: var(--text-orange);
+  background-color: var(--primary-bg);
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 24px;
+  text-align: center;
+  white-space: nowrap;
+
+  opacity: 0;
+  transform: translateY(15px);
+
+  transition: opacity 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+    transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  transition-delay: calc(var(--i) * 0.15s);
+}
+
+.quick-nav-menu a:hover {
+  background-color: #ff5722;
+  color: #ffffff;
+}
+
+#scrollToTopBtn {
+  width: 46px;
+  height: 46px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(255, 87, 34, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #333333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+}
+
+#scrollToTopBtn:hover {
+  transform: rotate(-90deg);
+  border: 2px dotted var(--btn-bg); 
+}
+
+#scrollToTopBtn:hover+.quick-nav-menu,
+.quick-nav-menu:hover {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1) translateY(0);
+}
+
+#scrollToTopBtn:hover+.quick-nav-menu a,
+.quick-nav-menu:hover a {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 
 /* for tablet  */
 @media only screen and (min-width:768px) and (max-width:1100px) {
@@ -1418,6 +1502,87 @@ textarea:focus {
     margin-bottom: 5.63vw;
   }
 
+
+  /* Slider Link */
+  .slider-link-sec {
+    width: 90% !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    border: 2px solid var(--btn-bg) !important;
+    margin: 0 auto !important;
+    position: relative !important;
+  }
+
+  .slider-items {
+    padding: 14px 0px !important;
+    width: 80% !important;
+    margin: 0 auto !important;
+  }
+
+  .slider-items .slick-slide {
+    margin: 0 10px !important;
+  }
+
+  .slider-items .slider-item {
+    border: none !important;
+    box-sizing: border-box !important;
+  }
+
+
+  .slider-link-sec .slick-prev,
+  .slider-link-sec .slick-next {
+    position: absolute !important;
+    z-index: 99 !important;
+    width: 36px !important;
+    height: 36px !important;
+    background-color: #ffffff !important;
+    border-radius: 50% !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 15px 15px !important;
+  }
+
+  .slider-link-sec .slick-prev {
+    left: -13% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  .slider-link-sec .slick-next {
+    right: -13% !important;
+    top: 50% !important;
+    transform: translate(50%, -50%) !important;
+  }
+
+  .slider-link-sec .slick-prev:before {
+    content: "\21AB";
+    font-weight: 900;
+  }
+
+  .slider-link-sec .slick-next:before {
+    content: "\21AC";
+    font-weight: 900;
+  }
+
+  .slider-link-sec .slick-prev:before,
+  .slider-link-sec .slick-next:before {
+    font-size: 18px !important;
+    opacity: 1 !important;
+    line-height: 1 !important;
+    display: block !important;
+  }
+
+  .slider-link-sec .slick-prev:hover,
+  .slider-link-sec .slick-next:hover {
+    background-color: var(--btn-bg) !important;
+  }
+
+  .slider-link-sec .slick-prev:hover::before,
+  .slider-link-sec .slick-next:hover::before {
+    color: var(--btn-text) !important;
+  }
 
   /* fifth link  */
   .fifth-link-sec {
