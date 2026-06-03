@@ -8,16 +8,9 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" /> -->
-  <!-- Link Swiper's CSS -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" /> -->
-  <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/slick.min.css">
   <link rel="stylesheet" href="css/slick-theme.min.css">
-  <!-- <link rel="stylesheet" href="css/slick.min.css"> -->
-</head>
+  </head>
 
 <body>
   <div class="wrapper">
@@ -324,12 +317,11 @@
       </button>
     
       <div class="quick-nav-menu">  
-        <a href="#first-link" style="--i: 6;">First Link</a>
-        <a href="#second-link" style="--i: 5;">Second Link</a>
-        <a href="#third-link" style="--i: 4;">Third Link</a>
-        <a href="#fourth-link" style="--i: 3;">Fourth Link</a>
-        <a href="#fifth-link" style="--i: 2;">Fifth Link</a> 
-        <a href="#contact" style="--i: 1;">Contact</a>
+        <a href="#first-link" >First Link</a>
+        <a href="#second-link"  >Second Link</a>
+        <a href="#third-link"  >Third Link</a>
+        <a href="#fourth-link"  >Fourth Link</a>
+        <a href="#fifth-link"  >Fifth Link</a>  
       </div>
     
     </div>
@@ -337,53 +329,7 @@
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/custom.js"></script>
   <script src="js/slick.min.js"></script>
-
-  <script>
-    $(document).ready(function () {
-        $('.slider-items').slick({
-          slidesToShow: 3,      
-          centerMode: true,         
-          centerPadding: '150px',   
-          infinite: true,           
-          arrows: false,           
-          dots: true,               
-          draggable: true,
-          swipe: true,
-          
-          autoplay: true,
-          autoplaySpeed: 1000,
-          speed: 800,
-          pausOnHover: true,
-          responsive: [
-            {
-              breakpoint: 1025,     
-              settings: {
-                slidesToShow: 3, 
-                centerMode: true,
-                centerPadding: '50px',
-                arrows: false,
-                dots: true
-              }
-            },
-            {
-              breakpoint: 768,     
-              settings: {
-                slidesToShow: 1,     
-                centerMode: false,   
-                centerPadding: '150px', 
-                arrows: true,       
-                dots: false,
-                 autoplay: true,
-                autoplaySpeed: 1000,
-                speed: 800,
-                pausOnHover: true,     
-              }
-            }
-          ]
-        });
-      });
  
-  </script>
 </body>
 
 </html>
